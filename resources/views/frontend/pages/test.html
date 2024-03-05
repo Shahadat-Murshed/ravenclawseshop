@@ -1,0 +1,45 @@
+<div class="col-6 mb-3">
+    @if ($product_variant->in_stock)
+    <button
+        class="variant-card"
+        id="product_{{ $product_variant['id']}}"
+        data-variant="{{ $product_variant['id']}}"
+        data-quantity="{{$product_variant->unit}}"
+        data-price="{{$product_variant->discount_price ? $product_variant->discount_price : $product_variant->price}}"
+        onclick="{{$product_variant->in_stock ? 'scrollToInfoCorner()' : ''}}"
+    >
+        <span class="amount" style="display: inline-block">
+            {{$product_variant->unit}}</span
+        >
+        <br />
+        @if(getRegion() == 'Malaysia') @if ($product_variant->in_stock) @if
+        (checkDiscount($product_variant))
+        <span class="variant-current-price">
+            {{currency()}}{{$product_variant->discount_price_rm}}</span
+        >
+        <strike class="variant-original-price" style="color: var(--neutral)"
+            >{{currency()}}{{$product_variant->price_rm}}
+        </strike>
+        @else
+        <span class="variant-current-price">
+            {{currency()}}{{$product_variant->price_rm}}
+        </span>
+        @endif @else
+        <span style="color: gray"> Out of Stock </span>
+        @endif @endif @if (getRegion() == 'Global') @if
+        ($product_variant->in_stock) @if (checkDiscount($product_variant))
+        <span class="variant-current-price">
+            {{currency()}}{{$product_variant->discount_price}}</span
+        >
+        <strike class="variant-original-price" style="color: var(--neutral)"
+            >{{currency()}}{{$product_variant->price}}
+        </strike>
+        @else
+        <span class="variant-current-price">
+            {{currency()}}{{$product_variant->price}}
+        </span>
+        @endif @else
+        <span style="color: gray"> Out of Stock </span>
+        @endif @endif
+    </button>
+</div>

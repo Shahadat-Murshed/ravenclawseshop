@@ -1,0 +1,175 @@
+.banner img {
+    height: 40vh;
+    width: 100%;
+    object-position: 0% 0%;
+    object-fit: cover;
+}
+
+.elevated {
+    min-height: 50vh;
+    background: rgba(17, 14, 43, 0.66);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    transform: translateY(-25vh);
+    padding: 2vh 5vh;
+    border-radius: 1rem;
+}
+
+.elevated .header {
+    height: 20vh;
+}
+.elevated .header .breadcrumb {
+    height: 5vh;
+
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.elevated .header .breadcrumb a {
+    font-size: 1rem;
+    color: var(--neutral);
+}
+.elevated .header .breadcrumb a:hover {
+    color: white;
+}
+.elevated .header .logo {
+    display: flex;
+    align-items: center;
+}
+.elevated .header .logo img {
+    max-height: 15vh;
+    width: 100%;
+    object-fit: contain;
+}
+
+.game-info span.title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.game-info div.description {
+    color: var(--neutral);
+    text-align: justify !important;
+}
+
+.order-info span.title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.purchase-corner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5vh;
+}
+.purchase-corner .corner {
+    border-radius: 10px;
+    background: #150c35;
+}
+.purchase-corner .corner .header {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.purchase-corner .corner .header {
+    border-bottom: 2px solid var(--primary-color);
+}
+.purchase-corner .corner .body {
+    padding: 1rem;
+    gap: 15px;
+}
+
+.purchase-corner .corner .body span.title {
+    font-size: 20px;
+}
+
+.recommended {
+    min-height: 30vh;
+    background: rgba(17, 14, 43, 0.66);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    transform: translateY(-20vh);
+    padding: 2vh 5vh;
+    border-radius: 1rem;
+}
+.recommended .header {
+    height: 5vh;
+
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.product-variant .variant-card {
+    padding: 1rem 0.5rem;
+    background-color: rgba(116, 20, 213, 0.5);
+    border-radius: 10px;
+    text-decoration: none;
+
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+
+.product-variant .variant-card .amount {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+.product-variant .variant-card .price {
+    font-size: 0.8rem;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.product-variant .variant-card span.variant-current-price {
+    color: var(--yellow-color);
+}
+
+.focus-variant-card {
+    background-color: var(--primary-color) !important;
+}
+
+.focus-price {
+    position: absolute;
+    top: -10px;
+    background-color: var(--blue-color) !important;
+}
+
+.payment-method #order-details,
+.payment-method #order-price {
+    color: var(--yellow-color);
+}
+
+select.form-select {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+select option {
+    color: black;
+}
+.title-holder span {
+    color: #fff;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    /* font-weight: 700; */
+    line-height: normal;
+    letter-spacing: 1.4px;
+}
+
+.title-holder i {
+    font-size: 1.5rem;
+}

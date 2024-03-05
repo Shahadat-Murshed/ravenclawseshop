@@ -1,0 +1,17 @@
+.nav-item button img {
+    width: 40px;
+    height: 40px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.nav-item .nav-link span {
+    color: white;
+    font-weight: 600;
+}
+.nav-item .nav-link.active {
+    background-color: #3b0f74;
+}
+.nav-item .nav-link.active span {
+    color: white;
+}

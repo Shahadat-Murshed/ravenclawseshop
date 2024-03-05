@@ -1,0 +1,132 @@
+/* navbar css */
+.logout:hover a {
+    color: white;
+}
+/* navbar */
+.navbar {
+    background: linear-gradient(-45deg, #221232, #070707, #0f1c27);
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-size: 400% 400%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    animation: gradient 10s ease infinite;
+}
+
+.navbar .nav-link span {
+    color: white;
+}
+.navbar .nav-link:hover span {
+    color: #429bed;
+}
+
+/* Initially hide the mobile nav off-screen */
+#mobile-nav {
+    position: fixed;
+    bottom: -100%; /* Off-screen initially */
+    left: 0;
+    width: 100%;
+    height: 100%; /* Set the height to 50% */
+    background: linear-gradient(-45deg, #221232, #070707, #0f1c27);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 600px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    /* Add background color if necessary */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow for a subtle effect */
+    transition: bottom 0.3s ease-in-out; /* Add a transition for smooth sliding effect */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Class to show the mobile nav by sliding it up from the bottom */
+#mobile-nav.show-mobile-nav {
+    bottom: 0;
+}
+
+/* Close button styles */
+#mobile-nav-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Add a backdrop for an overlay effect */
+#mobile-nav-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 999; /* Ensure it's above other content */
+}
+
+.mobile-nav-products {
+    padding-right: 2vh;
+    width: 100%;
+    max-height: 35vh;
+    overflow-y: scroll;
+}
+
+.mobile-nav-link {
+    background-color: var(--neutral);
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.mobile-nav-accordion .accordion-item {
+    background-color: transparent;
+}
+.mobile-nav-accordion .accordion-item button {
+    /* border-radius: 15px; */
+    font-weight: 600;
+}
+.mobile-nav-accordion .accordion-item button.collapsed {
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+}
+.mobile-nav-accordion .accordion-item button:not(.collapsed) {
+    background-color: rgba(0, 0, 0);
+    border: 1px solid white;
+    box-shadow: none;
+    color: white;
+}
+/*  */
+#mobile-search {
+    position: fixed;
+    bottom: -100%; /* Off-screen initially */
+    left: 0;
+    width: 100%;
+    height: 100%; /* Set the height to 50% */
+    background: linear-gradient(-45deg, #221232, #070707, #0f1c27);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 600px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    /* Add background color if necessary */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow for a subtle effect */
+    transition: bottom 0.3s ease-in-out; /* Add a transition for smooth sliding effect */
+    z-index: 1000; /* Ensure it's above other content */
+}
+#mobile-search.show-mobile-search {
+    bottom: 0;
+}
+#mobile-search-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#faq::after {
+    transform: rotate(-90deg) !important;
+}

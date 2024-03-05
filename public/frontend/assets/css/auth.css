@@ -1,0 +1,27 @@
+.login-card {
+    border-radius: 1rem;
+    width: 100%;
+    background: #150c35;
+    /* min-height: 50vh; */
+
+    padding: 6rem 3rem;
+}
+
+.login-card .header {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    /* padding-left: 1rem; */
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.login-card .header span {
+    color: #fff;
+    font-family: Inter;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+}

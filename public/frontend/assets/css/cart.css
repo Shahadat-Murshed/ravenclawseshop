@@ -1,0 +1,84 @@
+/*
+.cart .cart-header {
+    background-color: var(--primary-color);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.container {
+    padding: 0px;
+}
+
+.cart .cart-body {
+    background-color: rgb(117, 20, 215, 0.5);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.variant-category {
+    background-color: var(--neutral);
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+}
+
+#cartTable thead {
+    font-size: 1.2rem;
+}
+
+.fa-xmark:hover {
+    color: red;
+}
+
+.swal2-show {
+    background: black;
+    color: white;
+}
+
+.table-responsive.modal .modal-header {
+    height: 60px; /* Set the desired height for the modal header */
+
+#cartTable th,
+#cartTable tr {
+    text-align: center !important; /* Align the column titles to the left */
+}
+
+.modal.dtr-bs-modal .modal-content {
+    background: linear-gradient(-45deg, #221232, #070707, #0f1c27) !important;
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite; /* Adjust the opacity as needed */
+    color: #fff !important; /* Text color */
+}
+
+.modal.dtr-bs-modal .dtr-details {
+    padding-left: 0;
+}
+.modal.dtr-bs-modal .dtr-details li {
+    list-style: none !important;
+    display: flex;
+    flex-direction: space-between;
+}
+.modal.dtr-bs-modal .dtr-details .dtr-data a img {
+    height: 10vh !important;
+    aspect-ratio: 1;
+}
+
+/*  */
+.dtr-details {
+    width: 100%;
+}
+.dtr-details li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+table.dataTable > tbody > tr.child span.dtr-title {
+    min-width: 0px !important;
+    font-weight: 400 !important;
+}
+
+.dtr-details li img {
+    aspect-ratio: 1;
+    height: 10vh !important;
+}

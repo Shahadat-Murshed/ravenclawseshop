@@ -1,0 +1,18 @@
+.faq-accordion .accordion-item {
+    background-color: transparent;
+}
+.faq-accordion .accordion-item button {
+    /* border-radius: 15px; */
+    font-weight: 600;
+}
+.faq-accordion .accordion-item button.collapsed {
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+}
+.faq-accordion .accordion-item button:not(.collapsed) {
+    background-color: rgba(0, 0, 0);
+    border: 1px solid white;
+    box-shadow: none;
+    color: white;
+}

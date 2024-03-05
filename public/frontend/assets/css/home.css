@@ -1,0 +1,196 @@
+/* css for home */
+
+.slider-container-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    bottom: 0;
+}
+
+.slider-container-inner h1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.slider-container-inner h5 {
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.slider-container-inner-button {
+    position: absolute;
+    right: 0;
+}
+
+.slider-container-inner-button button a {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.slider {
+    height: 50vh;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-nav {
+    height: 5vh;
+    margin-top: 2vh;
+}
+section {
+    margin-top: 5vh;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #2d2929; /* Change to your desired color */
+    font-size: 120px; /* Change to your desired size */
+    color: #fff; /* Change the arrow icon color to match the background */
+    /* Makes the arrows circular, adjust as needed */
+    width: 60px; /* Adjust the width and height to set the arrow size */
+    height: 100%;
+    opacity: 0;
+    transform: translateY(-42.5%);
+    transition: opacity 0.2s; /* Smooth transition effect */
+}
+
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.swiper-button-prev::after {
+    content: "<"; /* Change the content to your custom arrow symbol or icon */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ::after pseudo-element styles for the right (next) arrow */
+.swiper-button-next::after {
+    content: ">"; /* Change the content to your custom arrow symbol or icon */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Show the navigation arrows on hover */
+.swiper-container-fade:hover .swiper-button-next,
+.swiper-container-fade:hover .swiper-button-prev {
+    opacity: 0.5;
+}
+
+.container {
+    /* background-color: green; */
+    padding: 0px;
+}
+
+.title-holder span {
+    color: #fff;
+    font-family: Inter;
+    /* font-size: 1.5rem; */
+    font-style: normal;
+    /* font-weight: 700; */
+    line-height: normal;
+    letter-spacing: 1.4px;
+}
+
+.title-holder i {
+    font-size: 1.5rem;
+}
+
+/* .card-container {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3498db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.card img {
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: fill;
+} */
+
+/* home slider */
+.home-slide {
+    position: relative;
+    animation: change-shadow 10s ease infinite;
+}
+
+@keyframes change-shadow {
+    0% {
+        /* box-shadow: #0f1c27 0px -15vh 36px -28px inset; */
+        box-shadow: inset 0 -193px 170px -195px #0f1c27;
+    }
+    100% {
+        /* box-shadow: #070707 0px -15vh 36px -28px inset; */
+        box-shadow: inset 0 -193px 170px -195px #070707;
+    }
+}
+.home-slide .info-holder {
+    position: relative;
+    bottom: -40vh;
+    max-height: 10vh;
+}
+.home-slide .info-holder .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.home-slide .info-holder .info .title {
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.home-slide .info-holder .info .sub-title {
+    font-weight: 0.8rem;
+    text-transform: capitalize;
+    color: var(--neutral);
+}
+.home-slide .info-holder .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+/*  */
+.btn-outline-primary a {
+    color: white;
+}
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+.btn-outline-primary a:hover {
+    color: white;
+}

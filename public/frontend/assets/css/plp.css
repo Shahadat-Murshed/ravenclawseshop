@@ -1,0 +1,16 @@
+.list-slider-container {
+    height: 60vh;
+}
+.title-holder span {
+    color: #fff;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    /* font-weight: 700; */
+    line-height: normal;
+    letter-spacing: 1.4px;
+}
+
+.title-holder i {
+    font-size: 1.5rem;
+}

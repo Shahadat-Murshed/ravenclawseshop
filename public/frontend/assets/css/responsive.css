@@ -1,0 +1,163 @@
+@media (max-width: 435px) {
+    .game-info span.title {
+        font-size: 20px !important;
+    }
+    .list-slider-container {
+        height: 65vh;
+    }
+    .product-variant .variant-card .amount {
+        font-size: 0.8rem;
+    }
+    .product-variant .variant-card .price {
+        font-size: 0.8rem;
+    }
+    .slider {
+        height: 60vh !important;
+    }
+
+    .home-slide .info-holder .info .title {
+        font-family: sans-serif;
+        font-size: 18px !important;
+    }
+    .home-slide .info-holder .info .sub-title {
+        font-weight: 12px;
+
+        color: var(--neutral);
+    }
+    @keyframes change-shadow {
+        0% {
+            /* box-shadow: #0f1c27 0px -15vh 36px -28px inset; */
+            box-shadow: inset 0 -250px 70px -95px #0f1c27;
+        }
+        100% {
+            /* box-shadow: #070707 0px -15vh 36px -28px inset; */
+            box-shadow: inset 0 -250px 70px -95px #070707;
+        }
+    }
+    .navbar {
+        height: 8vh;
+    }
+    .title-holder span {
+        font-size: 14px !important;
+    }
+
+    .title-holder i {
+        font-size: 1.2rem !important;
+    }
+    .purchase-corner .corner {
+        background-color: transparent !important;
+    }
+    .purchase-corner .corner .header {
+        padding-left: 0rem !important;
+    }
+    .purchase-corner .corner .body {
+        padding: 0rem !important;
+        padding-top: 1rem !important;
+        gap: 15px;
+    }
+
+    .btn-primary {
+        margin-top: 1rem;
+    }
+
+    /* pdp page */
+    .elevated {
+        padding: 2vh 1vh !important;
+    }
+    .recommended {
+        padding: 2vh 1vh !important;
+    }
+
+    .container {
+        width: 90vw !important;
+    }
+
+    .login-card {
+        padding: 3rem 1rem !important;
+    }
+
+    .login-card .header span {
+        font-size: 1.4em !important;
+    }
+
+    .nav-item button img {
+        width: 20px !important;
+        height: 20px !important;
+        object-fit: fill;
+        /* border-radius: 10px; */
+    }
+
+    .nav-item .nav-link span {
+        color: white;
+        font-weight: 600;
+        font-size: 0.8rem !important;
+    }
+}
+
+/* CSS for Mobile Screen (up to 767px)  */
+@media (max-width: 767px) {
+    .container {
+        width: 90vw !important;
+    }
+    .title-holder span {
+        font-size: 1.2rem !important;
+    }
+
+    .title-holder i {
+        font-size: 1.2rem !important;
+    }
+    /*
+    .container {
+        width: 80vw !important;
+    } */
+}
+
+/* CSS for Tablet Screen (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .title-holder span {
+        font-size: 1.2rem !important;
+    }
+
+    .title-holder i {
+        font-size: 1.2rem !important;
+    }
+    .container {
+        width: 80vw !important;
+    }
+}
+
+/* CSS for Laptop Screen (1024px to 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .title-holder span {
+        font-size: 1.2rem;
+    }
+    .title-holder i {
+        font-size: 1.2rem !important;
+    }
+    .container {
+        width: 70vw !important;
+    }
+    .nav-link {
+        font-size: 0.8rem;
+    }
+    #dropdown-toggle-region {
+        font-size: 0.8rem;
+    }
+}
+
+/* CSS for Desktop Screen (1280px and above) */
+@media (min-width: 1280px) and (max-width: 1600px) {
+    .container {
+        width: 70vw !important;
+    }
+}
+
+/* CSS for Desktop Screen (1280px and above) */
+@media (min-width: 1920px) {
+    .nav-link {
+        font-size: 1.2rem;
+    }
+    #dropdown-toggle-region {
+        font-size: 1.2rem;
+    }
+}
